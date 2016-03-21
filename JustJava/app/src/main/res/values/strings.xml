@@ -3,4 +3,5 @@
     <string name="quantity">Quantity</string>
     <string name="order">Order</string>
     <string name="empty_string"/>
+    <string name="price">Price</string>
 </resources>
