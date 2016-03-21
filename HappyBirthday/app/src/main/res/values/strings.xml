@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Happy Birthday!</string>
+    <string name="action_settings">Settings</string>
+    <string name="happy_birthday">Happy Birthday Pilita linda!</string>
+    <string name="birthday_image_desc">Birthday Image</string>
+    <string name="from_message">From, Michael</string>
+</resources>
