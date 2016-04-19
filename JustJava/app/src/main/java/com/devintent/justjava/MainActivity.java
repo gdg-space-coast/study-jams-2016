@@ -31,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = calculatePrice();
-        String priceMessage = "Total = $" + price;
-        priceMessage = priceMessage + "\nThank you!";
-        displayMessage(priceMessage);
+        displayMessage(createOrderSummary(calculatePrice()));
     }
 
     /**
@@ -43,6 +40,17 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculatePrice() {
         return quantity * 5;
+    }
+
+    /**
+     * Create a string that summarizes the order
+     * @param orderPrice price of order
+     * @return summary
+     */
+    private String createOrderSummary(int orderPrice) {
+        return "Name: Kaptain Kunal\nQuantity: " + quantity +
+                "\nTotal: $" +  orderPrice +
+                "\nThank you!";
     }
 
     /**
